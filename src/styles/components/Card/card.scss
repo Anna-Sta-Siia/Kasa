@@ -1,0 +1,32 @@
+.card {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 340px;
+  height: 340px;
+  position: relative;
+  cursor: pointer;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    height: 255px;
+  }
+}

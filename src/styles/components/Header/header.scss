@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  font-family: 'Montserrat', sans-serif;
+
+  &__logo {
+    height: 68px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 57px;
+
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500;
+      color: #ff6060;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+
+    &__logo--mobile {
+      display: block;
+      height: 48px;
+    }
+
+    &__logo--desktop {
+      display: none;
+    }
+
+    &__nav {
+      gap: 10px;
+
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
