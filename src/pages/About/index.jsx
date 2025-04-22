@@ -1,14 +1,16 @@
 import React from "react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import "../../styles/variables_et_mixins/variables_et_mixins.scss"
 
-const About= () => {
+const About = () => {
   return (
-  <>
-        <Header />
-        
-        <Footer />
-      </>
+    <>
+   <main className="page">
+      <Header />
+        </main>
+      <Footer />
+    </>
   )
 }
 

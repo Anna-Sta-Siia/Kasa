@@ -1,8 +1,11 @@
 
-@import '../variables/variables.scss';
+@import '../variables_et_mixins/variables_et_mixins.scss';
 body{
     margin: 0;
 }
 
 
-
+.page {
+    @include page-layout;
+  }
+  

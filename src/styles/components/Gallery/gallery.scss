@@ -1,0 +1,44 @@
+.gallery {
+    position: relative;
+    width: 100%;
+    height: 415px; // hauteur fixe comme la maquette
+    border-radius: 25px;
+    overflow: hidden;
+  
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // très important pour respecter le comportement "centré et coupé"
+      border-radius: 25px;
+    }
+  
+    &__arrow {
+      position: absolute;
+      top: 50%;
+      width: 48px;
+      height: 80px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 2;
+  
+      &--left {
+        left: 20px;
+      }
+  
+      &--right {
+        right: 20px;
+      }
+    }
+  
+    &__counter {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+      z-index: 2;
+    }
+  }
+  

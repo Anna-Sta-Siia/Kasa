@@ -3,17 +3,18 @@ import Header from "../../components/Header"
 import Banner from "../../components/Banner"
 import CardList from "../../components/CardList"
 import Footer from "../../components/Footer"
-import "../../styles/pages/Home/home.scss"
+import "../../styles/variables_et_mixins/variables_et_mixins.scss"
 
 const Home = () => {
   return (
     <>
-    <main className="home">
+   <main className="page">
       <Header />
         <Banner />
         <CardList />
-      </main>
+        </main>
       <Footer />
+      
     </>
   )
 }

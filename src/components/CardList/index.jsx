@@ -6,7 +6,7 @@ export default function CardList() {
   return (
     <section className="card-list">
       {logements.map((logement) => (
-        <Card key={logement.id} title={logement.title} cover={logement.cover} />
+        <Card key={logement.id} title={logement.title} cover={logement.cover} id={logement.id} />
       ))}
     </section>
   )
