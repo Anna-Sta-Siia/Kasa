@@ -1,10 +1,9 @@
+@import '../../variables/variables.scss';
 .card {
-  background-color: #ff6060;
-  color: white;
+  color:$secondary-color;
   border-radius: 10px;
   overflow: hidden;
-  width: 100%;
-  max-width: 340px;
+  width: calc(33.33% - 30px);
   height: 340px;
   position: relative;
   cursor: pointer;
@@ -13,6 +12,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   &__title {
@@ -20,13 +20,16 @@
     bottom: 0;
     left: 0;
     padding: 15px;
-    font-size: 1rem;
-    font-weight: 500;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
-    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    width: 35%;
   }
-
+  @media (max-width: 1024px) {
+    width: calc(50% - 20px);
+  }
   @media (max-width: 768px) {
     height: 255px;
+    width: 100%;
   }
 }

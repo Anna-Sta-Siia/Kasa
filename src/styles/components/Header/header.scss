@@ -1,9 +1,10 @@
+@import '../../variables/variables.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 
   &__logo {
     height: 68px;
@@ -25,7 +26,7 @@
       text-decoration: none;
       font-size: 24px;
       font-weight: 500;
-      color: #ff6060;
+      color: $secondary-color;
 
       &.active {
         text-decoration: underline;
@@ -34,11 +35,10 @@
   }
 
   @media screen and (max-width: 768px) {
-    padding: 20px;
 
     &__logo--mobile {
       display: block;
-      height: 48px;
+      height: 46px;
     }
 
     &__logo--desktop {
@@ -46,7 +46,7 @@
     }
 
     &__nav {
-      gap: 10px;
+      gap: 20px;
 
       a {
         font-size: 12px;
