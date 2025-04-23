@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../../styles/components/Collapse/collapse.scss'
-
+import arrowToggle from '../../assets/collapsecloseopen.png'
 
 export default function Collapse({ title, content }) {
   const [open, setOpen] = useState(false)
@@ -9,7 +9,11 @@ export default function Collapse({ title, content }) {
     <div className="collapse">
       <div className="collapse__header" onClick={() => setOpen(!open)}>
         <h3>{title}</h3>
-        <span>{open ? '▲' : '▼'}</span>
+        <img
+          src={arrowToggle}
+          alt="toggle arrow"
+          className={`collapse__icon ${open ? 'open' : ''}`}
+        />
       </div>
       {open && (
         <div className="collapse__content">

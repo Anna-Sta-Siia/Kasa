@@ -1,19 +1,15 @@
 
 $primary-color: #FF6060;
 $secondary-color: #000000;
-$third-color: #FFFFFF; // Pour le texte blanc
-
+$third-color: #FFFFFF; 
 $main-font: 'Montserrat', sans-serif;
 
 @mixin page-layout {
     padding: 45px 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
   
     @media (max-width: 768px) {
       padding: 20px;
-      gap: 27px;
+     
     }
   }
-  
+
