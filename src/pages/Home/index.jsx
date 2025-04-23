@@ -5,12 +5,18 @@ import CardList from "../../components/CardList"
 import Footer from "../../components/Footer"
 import "../../styles/variables_et_mixins/variables_et_mixins.scss"
 
+
+
 const Home = () => {
   return (
     <>
    <main className="page">
       <Header />
-        <Banner />
+      <Banner
+  image="/src/assets/Image_home.png"
+  title="Chez vous, partout et ailleurs"
+/>
+
         <CardList />
         </main>
       <Footer />

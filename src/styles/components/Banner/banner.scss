@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url("/src/assets/Image_home.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,10 +19,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, var(--overlay-opacity, 0.6)); // 👈 valeur par défaut à 0.6
     border-radius: 25px;
     z-index: 1;
   }
+
 
   &__title {
     position: relative;

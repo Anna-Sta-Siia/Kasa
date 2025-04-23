@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../styles/components/Collapse/collapse.scss'
+import '../../styles/components/Collapse/collapse_accommodation.scss'
 import arrowToggle from '../../assets/collapsecloseopen.png'
 
 export default function Collapse({ title, content }) {

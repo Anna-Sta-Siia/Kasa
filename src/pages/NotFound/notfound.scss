@@ -1,0 +1,42 @@
+@import '../../variables_et_mixins/variables_et_mixins.scss';
+
+.notfound {
+  text-align: center;
+  color: $primary-color;
+  padding: 60px 20px;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: $secondary-color;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  @media (min-width: 768px) {
+    padding: 100px;
+
+    &__image {
+      width: 400px;
+    }
+
+    &__text {
+      font-size: 32px;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../variables_et_mixins/variables_et_mixins.scss';
+.accommodation__collapses {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 15px;
+  @include collapse
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+.accommodation__collapses {
+  flex-direction: column;
+  .collapse {
+    width: 100%;
+  }
+}
+}

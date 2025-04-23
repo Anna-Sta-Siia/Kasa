@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 5px;
+  width: 100%;
   background-color: black;
   color: white;
   padding: 60px 0 20px 0;
@@ -14,16 +14,21 @@
   }
 
   &__text {
+    display: flex;
     font-size: 24px;
     font-weight: 500;
+    justify-content: center;
+    gap: 8px;
   }
 
   @media (max-width: 768px) {
     padding: 20px 0;
-    margin-top: 7px;
+   
 
     &__text {
       font-size: 12px;
+      flex-direction: column;
+      gap: 4px;
     }
   }
 }
