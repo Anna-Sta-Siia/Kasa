@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { Navigate } from 'react-router-dom'
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Accommodation from '../pages/Accommodation';
@@ -8,7 +9,8 @@ const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/about', element: <About /> },
   { path: '/accommodation/:id', element: <Accommodation /> },
-  { path: '*', element: <NotFound /> }
-]);
+  { path: '/404', element: <NotFound /> },
+  { path: '*', element: <Navigate to="/404" replace /> } // attrape tout le reste
+])
 
 export default router;

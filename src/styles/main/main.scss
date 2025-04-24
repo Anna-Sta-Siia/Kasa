@@ -1,12 +1,14 @@
-
 @import '../variables_et_mixins/variables_et_mixins.scss';
-body{
+body {
     margin: 0;
     font-family: $main-font;
-}
-
-
-.page {
+  }
+  
+  .page {
     @include page-layout;
+  }
+  
+  main {
+    flex: 1; // très important pour que le contenu pousse le footer
   }
   

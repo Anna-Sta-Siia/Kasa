@@ -22,13 +22,17 @@
   }
 
   @media (max-width: 768px) {
-    padding: 20px 0;
+   .footer{ padding: 20px 0px;
    
+    &__logo {
+      margin-bottom: 0px;}
 
     &__text {
-      font-size: 12px;
+      font-size: 15px;
       flex-direction: column;
       gap: 4px;
+      margin-top: 14px;
     }
   }
+}
 }

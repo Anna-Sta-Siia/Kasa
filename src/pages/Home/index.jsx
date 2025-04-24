@@ -14,8 +14,13 @@ const Home = () => {
       <Header />
       <Banner
   image="/src/assets/Image_home.png"
-  title="Chez vous, partout et ailleurs"
+  title={
+    <>
+      Chez vous,<br className="mobile-break" /> partout et ailleurs
+    </>
+  }
 />
+
 
         <CardList />
         </main>

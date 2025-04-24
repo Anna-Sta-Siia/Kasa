@@ -19,11 +19,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 15px;
+    padding: 15px 0 0 15px;
     font-size: 18px;
     font-weight: 700;
-    color: black;
-    width: 35%;
+    color: blue;
+    width: 40%;
   }
   @media (max-width: 1024px) {
     width: calc(50% - 20px);

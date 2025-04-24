@@ -5,13 +5,15 @@ $third-color: #FFFFFF;
 $main-font: 'Montserrat', sans-serif;
 
 @mixin page-layout {
-    padding: 45px 100px;
-  
-    @media (max-width: 768px) {
-      padding: 20px;
-     
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 45px 100px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
   }
+}
+
 
   @mixin collapse{
     .collapse {
