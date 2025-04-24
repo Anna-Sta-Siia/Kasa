@@ -29,18 +29,10 @@
 
   &__tags {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
-    margin: 10px 0px;
-  }
-
-  &__tag {
-    background-color: $primary-color;
-    color: $third-color;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
+    margin: 10px 0;
+    width: 80%;
   }
  
   //  Partie droite (rating + badge)

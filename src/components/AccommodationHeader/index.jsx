@@ -1,4 +1,5 @@
 import '../../styles/components/AccommodationHeader/accommodationheader.scss'
+import '../../styles/components/Tag/tag.scss'
 
 export default function AccommodationHeader({ title, location, tags, rating }) {
   const [region, city] = location.split(' - ')

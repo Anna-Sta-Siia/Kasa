@@ -15,7 +15,8 @@ const About = () => {
       <Header />
       <Banner
   image="/src/assets/Image_about.png"
-  overlayOpacity={0.3} // plus clair
+  title={null} 
+  variant="about"
 />
 
 <div className="about-collapses">

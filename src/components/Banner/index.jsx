@@ -1,15 +1,14 @@
 import '../../styles/components/Banner/banner.scss'
 
-export default function Banner({ image, title, overlayOpacity = 0.6 }) {
+export default function Banner({ title, image, variant = 'default' }) {
+  const className = `banner banner--${variant}`
+
   return (
-    <div
-      className="banner"
-      style={{
-        backgroundImage: `url(${image})`,
-        '--overlay-opacity': overlayOpacity, // 👈 une variable CSS pour contrôler l'opacité
-      }}
-    >
+    <div className={className}>
+      <div className="banner__overlay"></div>
       {title && <h1 className="banner__title">{title}</h1>}
+      <div className="banner__bg" style={{ backgroundImage: `url(${image})` }}></div>
     </div>
   )
 }
+

@@ -19,7 +19,9 @@ const Home = () => {
       Chez vous,<br className="mobile-break" /> partout et ailleurs
     </>
   }
+  variant="default"
 />
+
 
 
         <CardList />

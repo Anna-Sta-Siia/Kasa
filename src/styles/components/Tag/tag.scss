@@ -1,8 +1,24 @@
-.tag {
-  background-color: #ff6060;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 500;
+@import '../../variables_et_mixins/variables_et_mixins.scss';
+
+  .accommodation-header__tag {
+    flex-grow: 1;
+    text-align: center;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    padding: 5px 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 30%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px; 
+  }
+    @media (max-width: 768px){
+      .accommodation-header__tag {font-size: 10px;
+}
 }

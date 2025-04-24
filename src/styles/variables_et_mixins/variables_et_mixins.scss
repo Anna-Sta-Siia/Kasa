@@ -9,6 +9,9 @@ $main-font: 'Montserrat', sans-serif;
   flex-direction: column;
   padding: 45px 100px;
 
+  @media (max-width: 1024px) {
+    padding: 45px 50px;
+  }
   @media (max-width: 768px) {
     padding: 20px;
   }
@@ -48,7 +51,7 @@ $main-font: 'Montserrat', sans-serif;
       }
     
       &__icon.open {
-        transform: rotate(-180deg); // animation douce
+        transform: rotate(-180deg); 
       }
     
       &__content {
