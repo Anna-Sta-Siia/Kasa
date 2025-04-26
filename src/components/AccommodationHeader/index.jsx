@@ -1,15 +1,14 @@
 import '../../styles/components/AccommodationHeader/accommodationheader.scss'
-import '../../styles/components/Tag/tag.scss'
+import '../Tag/index.jsx'
+import starRed from '../../assets/star-red.png'
+import starGrey from '../../assets/star-grey.png'
 
-export default function AccommodationHeader({ title, location, tags, rating }) {
-  const [region, city] = location.split(' - ')
-
+export default function AccommodationHeader({ title, location, tags, rating, host }) {
   return (
     <div className="accommodation-header">
-      {/* Gauche : titre + région + tags */}
       <div className="accommodation-header__left">
         <h1 className="accommodation-header__title">{title}</h1>
-        <p className="accommodation-header__location">{region}</p>
+        <p className="accommodation-header__location">{location}</p>
         <div className="accommodation-header__tags">
           {tags.map((tag, index) => (
             <span key={index} className="accommodation-header__tag">{tag}</span>
@@ -17,28 +16,23 @@ export default function AccommodationHeader({ title, location, tags, rating }) {
         </div>
       </div>
 
-      {/* Droite : rating + badge */}  
       <div className="accommodation-header__right">
-      {city && (
-          <div className="accommodation-header__badge-container">
-          <span className="accommodation-header__badge-label">{city}</span>
-          <span className="accommodation-header__location-badge" />
-        </div>
-        )}
-      
-        <div className="accommodation-header__rating">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <span
-              key={star}
-              className={star <= parseInt(rating) ? 'star active' : 'star'}
-            >
-              ★
-            </span>
-          ))}
-        </div>
-
-      
+      <div className="accommodation-header__host">
+  <p>{host.name}</p>
+  <img src={host.picture} alt={host.name || "Hôte"} />
+</div>
+<div className="accommodation-header__rating">
+  {[1, 2, 3, 4, 5].map((star) => (
+    <img
+      key={star}
+      src={star <= parseInt(rating) ? starRed : starGrey}
+      alt={star <= parseInt(rating) ? 'Étoile remplie' : 'Étoile vide'}
+      className="rating-star"
+    />
+  ))}
+</div>
       </div>
     </div>
   )
 }
+

@@ -11,4 +11,12 @@ body {
   main {
     flex: 1; //pour que le contenu pousse le footer
   }
+  a {
+    text-decoration: none;
+  }
+  * {
+    outline: none;
+  }
+  
+  
   

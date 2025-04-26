@@ -9,19 +9,33 @@
 @keyframes open {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: scaleY(0.95);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: scaleY(1);
   }
 }
+
+
 
 @media (max-width: 768px) {
 .accommodation__collapses {
   flex-direction: column;
+  gap:0;
+
   .collapse {
     width: 100%;
+    .collapse__header{
+      font-size: 14px;
+      .collapse__icon{
+        width: 16px;
+        height: 9.14px;
+      }
+    }
+  .collapse__content{
+    font-size: 12px;
+  }
   }
 }
 }

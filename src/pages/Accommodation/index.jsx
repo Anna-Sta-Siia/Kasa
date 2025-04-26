@@ -31,11 +31,13 @@ export default function Accommodation() {
         <Gallery pictures={logement.pictures} />
 
         <AccommodationHeader
-          title={logement.title}
-          location={logement.location}
-          tags={logement.tags}
-          rating={logement.rating}
-        />
+  title={logement.title}
+  location={logement.location}
+  tags={logement.tags}
+  rating={logement.rating}
+  host={logement.host} 
+/>
+
 
         <div className="accommodation__collapses">
           <Collapse title="Description" content={logement.description} />

@@ -6,7 +6,8 @@ export default function Collapse({ title, content }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${open ? 'open' : ''}`}>
+
       <div className="collapse__header" onClick={() => setOpen(!open)}>
         <h3>{title}</h3>
         <img
@@ -15,13 +16,12 @@ export default function Collapse({ title, content }) {
           className={`collapse__icon ${open ? 'open' : ''}`}
         />
       </div>
-      {open && (
-        <div className="collapse__content">
-          {Array.isArray(content)
-            ? content.map((item, index) => <p key={index}>{item}</p>)
-            : <p>{content}</p>}
-        </div>
-      )}
+
+      <div className={`collapse__content ${open ? 'open' : ''}`}>
+        {Array.isArray(content)
+          ? content.map((item, index) => <p key={index}>{item}</p>)
+          : <p>{content}</p>}
+      </div>
     </div>
   )
 }

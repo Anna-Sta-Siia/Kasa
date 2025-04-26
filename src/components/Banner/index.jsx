@@ -1,14 +1,13 @@
 import '../../styles/components/Banner/banner.scss'
 
-export default function Banner({ title, image, variant = 'default' }) {
-  const className = `banner banner--${variant}`
-
+export default function Banner({ title, image }) {
   return (
-    <div className={className}>
-      <div className="banner__overlay"></div>
+    <div className="banner" style={{ backgroundImage: `url(${image})` }}>
+      {title && <div className="banner__overlay"></div>}
       {title && <h1 className="banner__title">{title}</h1>}
-      <div className="banner__bg" style={{ backgroundImage: `url(${image})` }}></div>
     </div>
-  )
+  );
 }
+
+
 

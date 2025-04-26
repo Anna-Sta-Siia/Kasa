@@ -6,6 +6,7 @@ import Collapse from "../../components/Collapse"
 import Footer from "../../components/Footer"
 import "../../styles/variables_et_mixins/variables_et_mixins.scss"
 import "../../styles/components/Collapse/collapse_about.scss"
+import imageAbout from '../../assets/Image_about.png';
 
 
 const About = () => {
@@ -14,9 +15,8 @@ const About = () => {
    <main className="page">
       <Header />
       <Banner
-  image="/src/assets/Image_about.png"
-  title={null} 
-  variant="about"
+  title={null}
+  image={imageAbout}
 />
 
 <div className="about-collapses">

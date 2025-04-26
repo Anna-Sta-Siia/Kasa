@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 50px 8.75% 0px 8.75%;
+  padding: 0px 8.75%;
 
   .collapse {
     @include collapse; 
@@ -22,6 +22,7 @@
   }
 }
 @media (max-width: 768px) {
-  .about-collapses {padding: 0;
+  .about-collapses {
+    padding: 0;
 }
 }

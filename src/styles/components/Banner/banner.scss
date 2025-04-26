@@ -3,66 +3,60 @@
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &__bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
+  overflow: hidden;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
 
   &__overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6); // valeur par défaut
+    background-color: rgba(0, 0, 0, 0.5); // Uniquement si title
     z-index: 1;
-  }
-
-  &--about .banner__overlay {
-    background-color: rgba(0, 0, 0, 0.3); // plus clair pour About
   }
 
   &__title {
     position: relative;
+    z-index: 2;
     color: white;
     font-weight: 700;
-    z-index: 2;
-    max-width: 90%;
-    line-height: 1.3;
-    padding-inline: 1rem;
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: 48px;
     text-align: center;
-    margin: 0 auto;
+
   }
 
-  .mobile-break {
-    display: none;
+  &--home {
+    background-image: url('/src/assets/Image_home.png');
+  }
+
+  &--about {
+    background-image: url('/src/assets/Image_about.png');
   }
 
   @media (max-width: 1024px) {
-    height: 170px;
+    &__title {
+      font-size: 36px;
+    }
   }
 
   @media (max-width: 768px) {
     height: 111px;
     border-radius: 10px;
-    justify-content: flex-start;
+    margin-bottom: 27px;
 
     &__title {
       text-align: left;
-      margin: 0;
-      padding-left: 15px;
-      width: 70%;
+      font-size: 24px;
+      white-space: normal;
+      width: 65%;
+      padding-right: 25%;
+    }
 
-      .mobile-break {
-        display: inline;
-      }
+    &__overlay {
+      border-radius: 10px;
     }
   }
 }

@@ -23,14 +23,24 @@
     gap: 57px;
 
     a {
-      text-decoration: none;
       font-size: 24px;
       font-weight: 500;
       color: $secondary-color;
 
       &.active {
-        text-decoration: underline;
+        position: relative;
+      
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 1px; 
+          width: 100%;
+          height: 0.5px;
+          background-color: $secondary-color;
+        }
       }
+      
     }
   }
 

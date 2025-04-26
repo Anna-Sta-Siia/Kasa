@@ -1,22 +1,20 @@
 .gallery {
     position: relative;
     width: 100%;
-    height: 415px; // hauteur fixe comme la maquette
-    border-radius: 25px;
     overflow: hidden;
   
     &__image {
       width: 100%;
-      height: 100%;
-      object-fit: cover; // très important pour respecter le comportement "centré et coupé"
+      height: 415px;
+      object-fit: cover; 
       border-radius: 25px;
     }
   
     &__arrow {
       position: absolute;
       top: 50%;
-      width: 48px;
-      height: 80px;
+      width: 46.68px;
+      height: 79.2px;
       transform: translateY(-50%);
       cursor: pointer;
       z-index: 2;
@@ -32,7 +30,7 @@
   
     &__counter {
       position: absolute;
-      bottom: 25px;
+      bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
       color: white;
@@ -43,6 +41,21 @@
   }
   
   @media (max-width: 768px) {
+    
+    .gallery__image {
+      height: 255px;
+      border-radius: 10px;
+    }
+    .gallery__arrow {
+      width: 11.67px;
+      height: 19.8px;
+      &--left {
+        left: 5px;
+      }
+      &--right {
+        right: 5px;
+      }
+    }
     .gallery__counter {
       display: none;
     }

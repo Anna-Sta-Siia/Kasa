@@ -4,6 +4,7 @@ import Banner from "../../components/Banner"
 import CardList from "../../components/CardList"
 import Footer from "../../components/Footer"
 import "../../styles/variables_et_mixins/variables_et_mixins.scss"
+import imageHome from '../../assets/Image_home.png';
 
 
 
@@ -13,17 +14,9 @@ const Home = () => {
    <main className="page">
       <Header />
       <Banner
-  image="/src/assets/Image_home.png"
-  title={
-    <>
-      Chez vous,<br className="mobile-break" /> partout et ailleurs
-    </>
-  }
-  variant="default"
+  title={<>Chez vous, partout et ailleurs</>}
+  image={imageHome}
 />
-
-
-
         <CardList />
         </main>
       <Footer />
