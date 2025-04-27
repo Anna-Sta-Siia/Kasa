@@ -1,13 +1,19 @@
-.rating {
+.accommodation-header__rating {
   display: flex;
-  gap: 5px;
+  gap: 15px;
+
+  .rating-star {
+    width: 24.75px;
+    height: 24px;
+  }
 }
-
-.star {
-  font-size: 20px;
-  color: #e3e3e3;
-
-  &.filled {
-    color: #ff6060;
+@media (max-width: 768px){
+  .accommodation-header__rating {
+    gap: 8px;
+  
+    .rating-star {
+      width: 13.41px;
+      height: 13px;
+    }
   }
 }

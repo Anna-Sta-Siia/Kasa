@@ -19,7 +19,7 @@ export default function Collapse({ title, content }) {
 
       <div className={`collapse__content ${open ? 'open' : ''}`}>
         {Array.isArray(content)
-          ? content.map((item, index) => <p key={index}>{item}</p>)
+          ? content.map((item) => <p key={item}>{item}</p>)
           : <p>{content}</p>}
       </div>
     </div>

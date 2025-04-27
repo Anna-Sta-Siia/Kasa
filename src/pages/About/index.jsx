@@ -20,8 +20,8 @@ const About = () => {
 />
 
 <div className="about-collapses">
-          {aboutData.map((item, index) => (
-            <Collapse key={index} title={item.title} content={item.content} />
+          {aboutData.map((item) => (
+            <Collapse key={item.id} title={item.title} content={item.content} />
           ))}
         </div>
 

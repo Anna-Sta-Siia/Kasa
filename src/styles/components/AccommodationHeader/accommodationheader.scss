@@ -64,15 +64,7 @@
     }
   }
 
-  &__rating {
-    display: flex;
-    gap: 15px;
-  
-    .rating-star {
-      width: 24.75px;
-      height: 24px;
-    }
-  }
+
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -108,14 +100,7 @@
           height: 40px;
         }
     }
-    &__rating {
-      gap: 8px;
     
-      .rating-star {
-        width: 13.41px;
-        height: 13px;
-      }
-    }
   }
 
 }

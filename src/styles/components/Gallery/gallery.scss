@@ -8,8 +8,13 @@
       height: 415px;
       object-fit: cover; 
       border-radius: 25px;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 1;
     }
-  
+    .gallery__image.fade {
+      opacity: 0;
+      transform: scale(1.02); /* Zoom léger pendant la transition */
+    }
     &__arrow {
       position: absolute;
       top: 50%;

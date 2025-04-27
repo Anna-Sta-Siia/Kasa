@@ -36,6 +36,7 @@ export default function Accommodation() {
   tags={logement.tags}
   rating={logement.rating}
   host={logement.host} 
+  logementId={logement.id} 
 />
 
 
