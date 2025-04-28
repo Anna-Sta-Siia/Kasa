@@ -5,7 +5,7 @@ import starGrey from '../../assets/star-grey.png';
 
 export default function Rating({ rating }) {
   const parsedRating = parseInt(rating);
-
+  console.log(rating)
   return (
     <div className="accommodation-header__rating">
       {[1, 2, 3, 4, 5].map((star) => (
