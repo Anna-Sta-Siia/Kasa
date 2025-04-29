@@ -1,10 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom' // 👈 ajoute Navigate ici
 import { useEffect, useState } from 'react'
-
 import logements from '../../data/logements.json'
-
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import Gallery from '../../components/Gallery'
 import Collapse from '../../components/Collapse'
 import AccommodationHeader from '../../components/AccommodationHeader'
@@ -25,9 +21,6 @@ export default function Accommodation() {
 
   return (
     <>
-      <main className="page">
-        <Header />
-
         <Gallery pictures={logement.pictures} />
 
         <AccommodationHeader
@@ -44,9 +37,6 @@ export default function Accommodation() {
           <Collapse title="Description" content={logement.description} />
           <Collapse title="Équipements" content={logement.equipments} />
         </div>
-      </main>
-
-      <Footer />
     </>
   )
 }
