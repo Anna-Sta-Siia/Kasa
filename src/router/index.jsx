@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   { path: '/about', element: <About /> },
   { path: '/accommodation/:id', element: <Accommodation /> },
   { path: '/404', element: <NotFound /> },
-  { path: '*', element: <Navigate to="/404" replace /> } // attrape tout le reste
+  { path: '*', element: <Navigate to="/404" replace /> } // attrape  le reste
 ])
 
 export default router;
