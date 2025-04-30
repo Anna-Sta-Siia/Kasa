@@ -1,4 +1,4 @@
-@import '../../variables_et_mixins/variables_et_mixins.scss';
+@import "../../variables_et_mixins/variables_et_mixins.scss";
 
 .accommodation-header {
   display: flex;
@@ -9,7 +9,7 @@
   // Partie gauche
   &__left {
     width: 70%;
-    margin-top:40px;
+    margin-top: 40px;
   }
 
   &__title {
@@ -34,7 +34,7 @@
     gap: 10px;
     margin: 10px 0;
   }
- 
+
   //  Partie droite (rating + host)
   &__right {
     display: flex;
@@ -64,21 +64,20 @@
     }
   }
 
-
-  
   @media (max-width: 768px) {
     flex-direction: column;
     &__left {
       width: 100%;
-      margin-top: 10px;}
-      &__title {
-        font-size: 18px;
-        margin-bottom: 15px;
-      }
-      &__location {
-        font-size: 14px;
-      }
-    
+      margin-top: 10px;
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &__location {
+      font-size: 14px;
+    }
+
     &__right {
       flex-direction: row;
       justify-content: space-between;
@@ -87,20 +86,18 @@
       margin-top: 0;
     }
 
-    &__host  {
+    &__host {
       flex-direction: row;
       justify-content: flex-end;
       order: 2;
-    
-        p {
-          font-size: 12px;
-        }
-        img {
-          width: 40px;
-          height: 40px;
-        }
-    }
-    
-  }
 
+      p {
+        font-size: 12px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
 }

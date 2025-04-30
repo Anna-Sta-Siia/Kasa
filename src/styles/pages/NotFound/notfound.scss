@@ -1,14 +1,13 @@
-@import '../../variables_et_mixins/variables_et_mixins.scss';
+@import "../../variables_et_mixins/variables_et_mixins.scss";
 
 .notfound {
   text-align: center;
   color: $primary-color;
   margin-bottom: 120px;
 
-
   &__image {
-    width:597px;
-    height:263px;
+    width: 597px;
+    height: 263px;
     margin: 120px auto;
     display: block;
   }
@@ -26,19 +25,13 @@
     display: inline-block;
     border-bottom: 1px solid $secondary-color;
     text-decoration: none;
-  
-    /* ajustements visuels */
-    line-height: 1; // réduit l'espace vertical
-    padding-bottom: 0; // colle au plus près la ligne
-    margin-top: 10px; // laisse un peu d’espace avec l’élément du dessus
+
+    line-height: 1;
+    padding-bottom: 0;
+    margin-top: 10px;
   }
-  
-  
-  
-  
 
   @media (max-width: 768px) {
-  
     &__image {
       width: 198px;
       height: 99px;

@@ -1,22 +1,19 @@
-@import '../variables_et_mixins/variables_et_mixins.scss';
+@import "../variables_et_mixins/variables_et_mixins.scss";
 body {
-    margin: 0;
-    font-family: $main-font;
-  }
-  
-  .page {
-    @include page-layout;
-  }
-  
-  main {
-    flex: 1; //pour que le contenu pousse le footer
-  }
-  a {
-    text-decoration: none;
-  }
-  * {
-    outline: none;
-  }
-  
-  
-  
+  margin: 0;
+  font-family: $main-font;
+}
+
+.page {
+  @include page-layout;
+}
+
+main {
+  flex: 1; //pour que le contenu pousse le footer
+}
+a {
+  text-decoration: none;
+}
+* {
+  outline: none;
+}

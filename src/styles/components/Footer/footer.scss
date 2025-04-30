@@ -23,9 +23,10 @@
 
   @media (max-width: 768px) {
     padding: 60px 0px;
-   
+
     &__logo {
-      margin-bottom: 0px;}
+      margin-bottom: 0px;
+    }
 
     &__text {
       font-size: 15px;
@@ -35,4 +36,3 @@
     }
   }
 }
-

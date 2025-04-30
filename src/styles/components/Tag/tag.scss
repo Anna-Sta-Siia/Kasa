@@ -1,22 +1,22 @@
-@import '../../variables_et_mixins/variables_et_mixins.scss';
+@import "../../variables_et_mixins/variables_et_mixins.scss";
 
-  .accommodation-header__tag {
-    background-color: #FF6060;
-    color: #FFFFFF;
-    padding: 5px 20px; 
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    white-space: nowrap; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 28px;
-    box-sizing: border-box;
-  }
-    @media (max-width: 768px){
-      .accommodation-header__tag {
-        font-size: 12px;
-        height: 20px;
+.accommodation-header__tag {
+  background-color: #ff6060;
+  color: #ffffff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .accommodation-header__tag {
+    font-size: 12px;
+    height: 20px;
+  }
 }

@@ -1,4 +1,4 @@
-@import '../../variables_et_mixins/variables_et_mixins.scss';
+@import "../../variables_et_mixins/variables_et_mixins.scss";
 
 .about-collapses {
   display: flex;
@@ -7,7 +7,7 @@
   padding: 0px 8.75%;
 
   .collapse {
-    @include collapse; 
+    @include collapse;
     width: 100%;
   }
 }
@@ -24,5 +24,5 @@
 @media (max-width: 768px) {
   .about-collapses {
     padding: 0;
-}
+  }
 }

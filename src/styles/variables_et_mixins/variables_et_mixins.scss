@@ -1,8 +1,7 @@
-
-$primary-color: #FF6060;
+$primary-color: #ff6060;
 $secondary-color: #000000;
-$third-color: #FFFFFF; 
-$main-font: 'Montserrat', sans-serif;
+$third-color: #ffffff;
+$main-font: "Montserrat", sans-serif;
 
 @mixin page-layout {
   display: flex;
@@ -22,8 +21,6 @@ $main-font: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     width: 100%;
     background-color: $third-color;
-  
-    
 
     &__header {
       border-radius: 10px;
@@ -42,7 +39,6 @@ $main-font: 'Montserrat', sans-serif;
       z-index: 2;
       -webkit-tap-highlight-color: transparent;
 
-
       h3 {
         margin: 0;
       }
@@ -53,7 +49,6 @@ $main-font: 'Montserrat', sans-serif;
         transition: transform 0.3s ease;
       }
     }
-
 
     &__icon.open {
       transform: rotate(-180deg);
@@ -71,8 +66,7 @@ $main-font: 'Montserrat', sans-serif;
       border-radius: 0 0 10px 10px;
       position: relative;
       top: -5px;
-      z-index: 1; 
-
+      z-index: 1;
 
       p {
         margin: 5px 0;

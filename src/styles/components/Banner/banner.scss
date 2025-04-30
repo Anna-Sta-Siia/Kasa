@@ -25,15 +25,14 @@
     font-weight: 700;
     font-size: 48px;
     text-align: center;
-
   }
 
   &--home {
-    background-image: url('/src/assets/Image_home.png');
+    background-image: url("/src/assets/Image_home.png");
   }
 
   &--about {
-    background-image: url('/src/assets/Image_about.png');
+    background-image: url("/src/assets/Image_about.png");
   }
 
   @media (max-width: 1024px) {

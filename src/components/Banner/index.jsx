@@ -1,4 +1,4 @@
-import '../../styles/components/Banner/banner.scss'
+import "../../styles/components/Banner/banner.scss";
 
 export default function Banner({ title, image }) {
   return (
@@ -8,6 +8,3 @@ export default function Banner({ title, image }) {
     </div>
   );
 }
-
-
-

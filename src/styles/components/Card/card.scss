@@ -1,6 +1,6 @@
-@import '../../variables_et_mixins/variables_et_mixins.scss';
+@import "../../variables_et_mixins/variables_et_mixins.scss";
 .card {
-  color:$secondary-color;
+  color: $secondary-color;
   border-radius: 10px;
   overflow: hidden;
   width: calc(33.33% - 30px);
@@ -22,7 +22,7 @@
     padding: 15px 0 0 15px;
     font-size: 18px;
     font-weight: 700;
-    color:$third-color;
+    color: $third-color;
     width: 40%;
   }
   @media (max-width: 1024px) {

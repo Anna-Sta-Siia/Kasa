@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import '../../styles/components/Card/card.scss'
+import { Link } from "react-router-dom";
+import "../../styles/components/Card/card.scss";
 
 export default function Card({ title, cover, id }) {
   return (
@@ -7,5 +7,5 @@ export default function Card({ title, cover, id }) {
       <img src={cover} alt={title} className="card__img" />
       <h2 className="card__title">{title}</h2>
     </Link>
-  )
+  );
 }
